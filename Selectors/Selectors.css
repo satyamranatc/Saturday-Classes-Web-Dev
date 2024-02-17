@@ -1,0 +1,50 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body
+{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+
+
+#Box
+{
+    height: fit-content;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    list-style: none;
+    row-gap: 20px;
+}
+
+
+#Box li
+{
+    background-color: teal;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    width: 70%;
+}
+
+#Box li:first-child
+{
+    background-color: red;
+}
