@@ -1,0 +1,134 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: black;
+    color: black;
+    font-family: sans-serif;
+}
+
+
+
+
+
+#List
+{
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid white;
+    color: white;
+    font-size: 20px;
+}
+
+#List li
+{
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin: 10px;
+}
+
+/*?----------------Pseudo Classes----------*/
+
+/*!1.  The First Li Tag In List */
+#List li:first-of-type 
+{
+    background-color: teal;
+}
+
+
+/*!2.  The Last Li Tag In List */
+#List li:last-of-type 
+{
+    background-color: teal;
+}
+
+/*!3.  The Nth Li Tag In List */
+#List li:nth-of-type(4)
+{
+    background-color: teal;
+}
+
+#List li:nth-of-type(even)
+{
+    background-color: red;
+}
+
+#List li:nth-of-type(odd)
+{
+    background-color: rgb(36, 35, 35);
+    color: white;
+}
+
+#List li:nth-of-type(2n-1)
+{
+    background-color: rgb(36, 35, 35);
+    color: white;
+}
+
+
+/*!4.  From Last Nth Li Tag In List */
+#List li:nth-last-child(3)
+{
+    background-color: green;
+}
+
+
+/*!5. First Chind -> If the tag Is on First Number */
+
+#List li:first-child
+{
+    background-color: yellow;
+    color: black;
+}
+
+
+/*!6. Last Chind -> If the tag Is on Last Number */
+#List li:last-child
+{
+    background-color: yellow;
+    color: black;
+}
+
+
+/*!7. Nth Chind -> If the tag Is on Nth Number */
+#List li:nth-child(2)
+{
+    background-color: yellow;
+    color: black;
+}
+
+
+/*!8. Nth Last Chind -> If the tag Is on Nth Last Number */
+#List li:nth-last-child(2)
+{
+    background-color: yellow;
+    color: black;
+}
+
+
+/*!9. Empty  -> If the tag Is Empty */
+#List li:empty
+{
+    background-color: blue;
+}
+
+
+/*!10 Hover */
+#List li:hover
+{
+    background-color: rgb(220, 11, 133);
+    color: white;
+}
+
+/*!11 Active */
+#List li:active
+{
+    background-color: rgb(220, 11, 133);
+    color: white;
+}

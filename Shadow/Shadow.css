@@ -1,0 +1,45 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: black;
+    color: black;
+    font-family: sans-serif;
+}
+
+#Box
+{
+    /* border: 1px solid black; */
+    margin: 200px auto;
+    height: 300px;
+    width: 240px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    font-size: 25px;
+
+   box-shadow: 2px   2px      3px          5px     red;
+   /*          L-R   T-B   Blur Radius  Spread Radius*/       
+
+}
+
+#Box img
+{
+    filter: drop-shadow(10px 10px 30px yellow);
+    /*  drop-shadow will Only Work On PNG  */
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+

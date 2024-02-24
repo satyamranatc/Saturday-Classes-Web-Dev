@@ -1,0 +1,56 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+#Box
+{
+    width: fit-content;
+    margin: 100px auto;
+    font-size: 50px;
+    border: 1px solid black;
+
+    position: relative;
+}
+
+
+#Box::before
+{
+    content: "Hi"; 
+    color: teal;
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+    transition: 0.4s;
+}
+
+
+#Box:hover::before
+{
+    color: white;
+    background-color: teal;
+    transform: translateX(-120px);
+}
+
+
+
+
+/* #Box::after
+{
+    content: "Hi By After";
+    color: red;
+} */

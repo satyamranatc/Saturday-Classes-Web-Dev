@@ -1,0 +1,38 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body
+{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+#Box
+{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    margin: 200px auto;
+    color: black;
+    font-size: 40px;
+    display: grid;
+    place-content: center;
+    transition: 0.5s;
+    
+
+}
+
+
+#Box:hover 
+{
+    background-color: teal;
+    transform: scale(1.5) rotate(20deg) translateX(20px) translateY(20px) skewX(20deg);
+}
+
